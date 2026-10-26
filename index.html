@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey, Carol｜卡羅媽媽</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #403a35;
+      background: #fffdf9;
+    }
+    header {
+      padding: 22px 16px;
+      text-align: center;
+      background: #f6eee5;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 10px;
+      border-bottom: 1px solid #eee5db;
+      font-size: 14px;
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      background: #f8f2eb;
+    }
+    .hero h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .hero p {
+      font-size: 14px;
+      line-height: 1.9;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 38px 18px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .product {
+      padding-bottom: 18px;
+      background: white;
+      border: 1px solid #f0e8df;
+    }
+    .product-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 4 / 5;
+      background: #f5eee7;
+      color: #8b7a6b;
+      font-size: 14px;
+    }
+    .product-info { padding: 12px; }
+    .product-info h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .price { font-size: 15px; }
+    .notice {
+      padding: 24px 16px;
+      text-align: center;
+      background: #f6eee5;
+      font-size: 13px;
+      line-height: 2;
+    }
+    footer {
+      padding: 22px 12px;
+      text-align: center;
+      color: #81776e;
+      font-size: 12px;
+    }
+    @media (min-width: 650px) {
+      .products { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .hero { padding: 75px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hey, Carol</h1>
+    <p>卡羅媽媽｜把喜歡的穿搭分享給你</p>
+  </header>
+
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#products">全部商品</a>
+    <a href="#about">關於我們</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Everyday, a little lovely.</h2>
+    <p>為孩子挑選舒服又有風格的日常穿搭。<br>把每一份喜歡，分享給你。</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>新品推薦</h2>
+    <div class="products">
+      <article class="product">
+        <div class="product-image">商品照片區</div>
+        <div class="product-info">
+          <h3>新品商品 01</h3>
+          <div class="price">NT$ －</div>
+        </div>
+      </article>
+      <article class="product">
+        <div class="product-image">商品照片區</div>
+        <div class="product-info">
+          <h3>新品商品 02</h3>
+          <div class="price">NT$ －</div>
+        </div>
+      </article>
+      <article class="product">
+        <div class="product-image">商品照片區</div>
+        <div class="product-info">
+          <h3>新品商品 03</h3>
+          <div class="price">NT$ －</div>
+        </div>
+      </article>
+      <article class="product">
+        <div class="product-image">商品照片區</div>
+        <div class="product-info">
+          <h3>新品商品 04</h3>
+          <div class="price">NT$ －</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="notice" id="about">
+    <strong>Hey, Carol｜卡羅媽媽</strong><br>
+    精選孩子的日常穿搭，讓每一天都可愛又自在。
+  </section>
+
+  <footer>© Hey, Carol. All rights reserved.</footer>
+</body>
+</html>
