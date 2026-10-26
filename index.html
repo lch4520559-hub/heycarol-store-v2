@@ -108,6 +108,16 @@
       .products { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .hero { padding: 75px 20px; }
     }
+      .hero {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hero-banner {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -123,11 +133,8 @@
   </nav>
 
   <section class="hero" id="home">
-    <h2>Everyday, a little lovely.</h2>
-    <p>為孩子挑選舒服又有風格的日常穿搭。<br>把每一份喜歡，分享給你。</p>
-  </section>
-
-  <section class="section" id="products">
+  <img src="banner.png" alt="Hey, Carol 品牌首頁封面" class="hero-banner">
+</section>
     <h2>新品推薦</h2>
     <div class="products">
       <article class="product">
